@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --persian-50: #EFF5FF;
+    --persian-700: #1B44DA;
+    --persian-800: #1C38B1;
+
+    --bluewood-50: #E2E8F0;
+    --bluewood-700: #64748B;
+    --bluewood-800: #334155;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--bluewood-800);
+}
+
+button {
+    font-family: 'Fira Sans', sans-serif;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/* Componentes */
+
+.container {
+    max-width: 100%;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.test-background {
+    width: 500px;
+    height: 500px;
+    border: 1px solid var(--bluewood-50);
+    padding: 48px;
+    border-radius: 8px;
+    background-color: #FFFFFF80;
+}
+
+.header-test {
+    margin: 48px 0;
+}
+
+.test-title {
+    font-size: 32px;
+    text-align: center;
+}
+
+.return-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    background: var(--bluewood-50) !important;
+    color: var(--bluewood-700) !important;
+    border: 1px solid transparent;
+    transition: all .2s ease-in-out;
+}
+
+.return-btn:hover {
+    background: white !important;
+    border: 1px solid var(--persian-700);
+    color: var(--persian-700) !important;
+}
+
+.button {
+    background-color: var(--persian-700);
+    padding: 16px 24px;
+    color: white;
+    border-radius: 8px;
+}
+
+/* index.html */
+
+.hero-content {
+    background-color: white;
+    text-align: center;
+    padding: 48px 8px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero__title {
+    font-size: 32px;
+    font-style: italic;
+}
+
+.hero__content {
+    margin: 24px 0;
+}
+
+.hero__button {
+    color: var(--persian-700);
+}
+
+.hero__button:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    padding: 48px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    border: 1px solid var(--bluewood-50);
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 16px 8px;
+    text-align: center;
+    background: url('/assets/bg-diamont.png') no-repeat center bottom;
+    transition: all .2s ease-in-out;
+}
+
+.card:hover,
+.card:hover .card__title {
+    border-color: var(--persian-700);
+    color: var(--persian-700);
+    rotate: -3deg;
+}
+
+.card__title {
+    color: #334155;
+    font-weight: 600;
+}
+
+.card__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.main {
+    margin: 48px 0;
+}
+
+.questions {
+    background-color: var(--persian-50);
+    text-align: center;
+    padding: 48px 0;
+}
+
+.questions__title {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.questions-content {
+    padding-top: 48px;
+    display: flex;
+}
+
+.questions__image {
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.questions__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    gap: 16px;
+}
+
+.questions__dialog {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.dialog__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--persian-700);
+    font-weight: 500;
+}
+
+.dialog-content {
+    padding: 8px 0;
+    text-align: start;
+    padding: 16px 8px;
+}
+
+.dialog-answer {
+    line-height: 25px;
+}
+
+details[open] svg {
+    transition: all .3s ease-in-out;
+}
+
+details[open] svg {
+    rotate: 180deg;
+}
+
+.start-content {
+    padding: 32px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #F5F5F5;
+}
+
+.footer-content {
+    padding: 32px 16px;
+}
+
+.footer__copy {
+    color: var(--bluewood-700);
+}
+
+@media (max-width: 770px) {
+    .questions__image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .questions-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer__copy {
+        text-align: center;
+    }
+}

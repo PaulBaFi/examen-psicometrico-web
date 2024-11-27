@@ -1,0 +1,66 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background: url('/assets/bg-diamont.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.header-test-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.graphic {
+    border: 1px solid var(--bluewood-50);
+    border-radius: 8px;
+    background-color: #FFFFFF80;
+    padding: 48px;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.path {
+    stroke: black;
+    stroke-width: 12;
+    fill: none;
+}
+
+.start-point {
+    fill: red;
+}
+
+.end-point {
+    fill: green;
+}
+
+#status,
+#timer,
+#error-info {
+    background-color: #FFFFFF80;
+    padding: 10px;
+    border: 1px solid var(--bluewood-50);
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+#timer {
+    top: 60px;
+}
+
+#error-info {
+    top: 100px;
+}

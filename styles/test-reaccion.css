@@ -1,0 +1,80 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background: url('/assets/bg-diamont.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.reaccion-test-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header-test-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#semaforo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.luz {
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#red {
+    width: 220px;
+    height: 220px;
+    background: url('/assets/red-off.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#green {
+    width: 140px;
+    height: 140px;
+    background: url('/assets/green-off.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#green.active {
+    /* Luces encendidas */
+    background: url('/assets/green-on.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#red.active {
+    /* Luces encendidas */
+    background: url('/assets/red-on.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#message,
+#reactionTimes {
+    background-color: #FFFFFF80;
+    padding: 10px;
+    border: 1px solid var(--bluewood-50);
+    margin: 8px 0;
+    border-radius: 8px;
+}
