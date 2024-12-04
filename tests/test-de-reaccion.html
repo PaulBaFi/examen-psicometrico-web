@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/logo.ico" type="image/x-icon" />
+    <title>Test de Reacción | Examen Psicométrico</title>
+
+    <link rel="stylesheet" href="/styles/test-reaccion.css" />
+    <link rel="stylesheet" href="/styles/app.css" />
+  </head>
+  <body>
+    <div class="reaccion-test-content">
+      <a href="/index.html" class="return-btn button">Regresar</a>
+
+      <header class="header-test header-test-content">
+        <h1>Test de Reacción</h1>
+        <button id="startBtn" class="button">Iniciar</button>
+      </header>
+
+      <div class="test-background">
+        <div id="semaforo">
+          <div id="red" class="luz"></div>
+          <div id="green" class="luz"></div>
+        </div>
+      </div>
+
+      <div id="message">Presiona "Iniciar" para comenzar</div>
+
+      <div id="reactionTimes"></div>
+    </div>
+
+    <script src="/scripts/test-reaccion.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/logo.ico" type="image/x-icon" />
+    <title>Test Punteado | Examen Piscométrico</title>
+
+    <link rel="stylesheet" href="/styles/app.css" />
+    <link rel="stylesheet" href="/styles/test-punteado.css" />
+  </head>
+
+  <body>
+    <div class="test-puntado-content">
+      <a href="/index.html" class="return-btn button">Regresar</a>
+
+      <header class="header-test header-test-content">
+        <h1 class="test-title">Test de Punteado</h1>
+        <button onclick="iniciarTest()" class="button">Iniciar</button>
+      </header>
+
+      <div class="test-background">
+        <div id="contenedor">
+          <div id="disco">
+            <div
+              id="orificio1"
+              class="orificio"
+              onclick="verificarAcierto(1, this)"
+            ></div>
+            <div
+              id="orificio2"
+              class="orificio"
+              onclick="verificarAcierto(2, this)"
+            ></div>
+            <div
+              id="orificio3"
+              class="orificio"
+              onclick="verificarAcierto(3, this)"
+            ></div>
+
+            <div id="estadistica1" class="estadistica"></div>
+            <div id="estadistica2" class="estadistica"></div>
+            <div id="estadistica3" class="estadistica"></div>
+          </div>
+          <div id="cuadro-central">
+            <h2 id="aciertosTotales">0 ACIERTOS</h2>
+            <p id="promedioAciertos">0.00 SEG. DE ACIERTO</p>
+            <p id="errores">0 ERRORES</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts/test-punteado.js"></script>
+  </body>
+</html>
